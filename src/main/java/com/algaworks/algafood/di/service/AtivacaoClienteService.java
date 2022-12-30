@@ -14,10 +14,8 @@ public class AtivacaoClienteService {
 	
 	public void ativar(Cliente cliente) {
 		cliente.ativar();
-		
-		 // dizer para o container que o cliente está ativo neste momento
+
 		eventPublisher.publishEvent(new ClienteAtivadoEvent(cliente));
-		
 	}
 
 }

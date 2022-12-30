@@ -18,6 +18,7 @@ public class NotificacaoService {
 	
 	@EventListener
 	public void clienteAtivadoListener(ClienteAtivadoEvent event) {
-		notificador.notificar(event.getCliente(), "Seu cadastro no sistema está ativo.");
+		notificador.notificar(event.getCliente(), "Seu cadastro no sistema está ativo!");
 	}
+	
 }
